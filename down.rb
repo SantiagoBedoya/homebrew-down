@@ -5,11 +5,11 @@
 class Down < Formula
   desc ""
   homepage "https://github.com/SantiagoBedoya/down"
-  version "0.4"
+  version "0.5"
 
   on_macos do
-    url "https://github.com/SantiagoBedoya/down/releases/download/v0.4/down_0.4_darwin_all.tar.gz"
-    sha256 "489a90ddaa1a9ad711c136724c39618646a19ad6c61280a2086cb56f1e3ecce0"
+    url "https://github.com/SantiagoBedoya/down/releases/download/v0.5/down_0.5_darwin_all.tar.gz"
+    sha256 "e52e1c64b9b64549cffd7ce270bf8638b01c6f3e445505473503aac9d30a16b7"
 
     def install
       bin.install "down"
@@ -18,16 +18,16 @@ class Down < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/SantiagoBedoya/down/releases/download/v0.4/down_0.4_linux_arm64.tar.gz"
-      sha256 "68e58818ca93b96a396c95d12c2c0c425f09968b9086666b61c5c82e0c0f0bfe"
+      url "https://github.com/SantiagoBedoya/down/releases/download/v0.5/down_0.5_linux_arm64.tar.gz"
+      sha256 "f5e5d2c6ac10fe1299935b5111148317eade034adba2f4eaf8e5e05e6a96bae7"
 
       def install
         bin.install "down"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/SantiagoBedoya/down/releases/download/v0.4/down_0.4_linux_amd64.tar.gz"
-      sha256 "90e1e3014e41b817903c04fd4249ad2383717ec58b5fd24aa166bc8b07e23c02"
+      url "https://github.com/SantiagoBedoya/down/releases/download/v0.5/down_0.5_linux_amd64.tar.gz"
+      sha256 "0a02254a95c8a1fb638f1325830ba0590210cc5815e868c6acd907acaf0017ae"
 
       def install
         bin.install "down"
